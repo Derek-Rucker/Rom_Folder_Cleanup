@@ -9,13 +9,8 @@ def menu():
     world_path = os.path.join(dir_path, 'World')
     other_path = os.path.join(dir_path, 'Other')
     
-    paths = []
-    paths.append(japan_path)
-    paths.append(europe_path)
-    paths.append(usa_path)
-    paths.append(other_path)
-    paths.append(world_path)
-    
+    paths = [japan_path, europe_path, usa_path, other_path, world_path]
+
     if os.path.exists(dir_path):
         create_directories(paths)
         files = os.scandir(dir_path)
